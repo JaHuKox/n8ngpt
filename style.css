@@ -8,7 +8,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     font-family: Arial, sans-serif;
-    display: none; /* Domyślnie ukryty, aktywowany przyciskiem */
+    display: none;
+    background-color: white;
 }
 
 /* Przycisk aktywacji czatu */
@@ -20,14 +21,18 @@
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 12px 18px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+.chat-widget-toggle:hover {
+    background-color: #0050A0;
 }
 
-/* Nagłówek (niebieski obszar) */
+/* Nagłówek czatu */
 .chat-widget-header {
     background-color: #0066DA;
     color: white;
@@ -52,6 +57,10 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
+    transition: opacity 0.3s;
+}
+.chat-widget-header .icons button:hover {
+    opacity: 0.7;
 }
 
 /* Treść wiadomości */
@@ -60,9 +69,10 @@
     padding: 20px;
     font-size: 16px;
     color: #333;
+    text-align: center;
 }
 
-/* Stopka (np. menu) */
+/* Stopka czatu */
 .chat-widget-footer {
     background-color: white;
     border-top: 1px solid #ccc;
@@ -74,4 +84,8 @@
     text-decoration: none;
     color: #0066DA;
     font-weight: bold;
+    transition: color 0.3s;
+}
+.chat-widget-footer a:hover {
+    color: #0050A0;
 }
