@@ -1,0 +1,77 @@
+/* Stylizacja głównego kontenera czatu */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: none; /* Domyślnie ukryty, aktywowany przyciskiem */
+}
+
+/* Przycisk aktywacji czatu */
+.chat-widget-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0066DA;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nagłówek (niebieski obszar) */
+.chat-widget-header {
+    background-color: #0066DA;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Ikony w nagłówku */
+.chat-widget-header .icons {
+    display: flex;
+    gap: 10px;
+}
+.chat-widget-header .icons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Treść wiadomości */
+.chat-widget-body {
+    background-color: white;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Stopka (np. menu) */
+.chat-widget-footer {
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-widget-footer a {
+    text-decoration: none;
+    color: #0066DA;
+    font-weight: bold;
+}
