@@ -9,7 +9,8 @@
     overflow: hidden;
     font-family: Arial, sans-serif;
     display: none;
-    background-color: white;
+    background: linear-gradient(to bottom, #0066DA 30%, white 30%);
+    border: 1px solid #ccc;
 }
 
 /* Przycisk aktywacji czatu */
@@ -34,7 +35,7 @@
 
 /* Nagłówek czatu */
 .chat-widget-header {
-    background-color: #0066DA;
+    background: transparent;
     color: white;
     padding: 15px;
     font-size: 18px;
@@ -65,11 +66,11 @@
 
 /* Treść wiadomości */
 .chat-widget-body {
-    background-color: white;
+    background-color: transparent;
     padding: 20px;
     font-size: 16px;
     color: #333;
-    text-align: center;
+    text-align: left;
 }
 
 /* Stopka czatu */
